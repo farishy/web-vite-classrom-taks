@@ -1,0 +1,164 @@
+{
+  "gadgetAndAccessories": [
+    {
+      "categoryName": "Smartphones",
+      "products": [
+        {
+          "name": "Apple iPhone 13",
+          "price": 14999000,
+          "image": "https://www.dslr-zone.com/wp-content/uploads/2021/10/4-1-768x768.jpeg",
+          "officialSite": "https://www.apple.com/iphone-13",
+          "tokopediaLink": "https://www.tokopedia.com/search?st=product&q=apple%20iphone%2013"
+        },
+        {
+          "name": "Samsung Galaxy S21",
+          "price": 11999000,
+          "image": "https://i5.walmartimages.com/asr/4014d1d5-2430-46cf-a2b6-526ebf2ff569.7fff876a828d1392c131ee20a014544b.jpeg",
+          "officialSite": "https://www.samsung.com/global/galaxy/galaxy-s21/",
+          "tokopediaLink": "https://www.tokopedia.com/search?st=product&q=samsung%20galaxy%20s21"
+        },
+        {
+          "name": "Google Pixel 6",
+          "price": 10999000,
+          "image": "https://c2.lestechnophiles.com/images.frandroid.com/wp-content/uploads/2021/08/google-pixel-6-teasing-aout-2021.png?resize=580",
+          "officialSite": "https://store.google.com/product/pixel_6",
+          "tokopediaLink": "https://www.tokopedia.com/search?st=product&q=google%20pixel%206"
+        },
+        {
+          "name": "Xiaomi Mi 11",
+          "price": 10999000,
+          "image": "https://th.bing.com/th/id/OIP.JE26VTPKF-E4rYaYjZXOrgHaHa?rs=1&pid=ImgDetMain",
+          "officialSite": "https://www.mi.com/global/mi-11/",
+          "tokopediaLink": "https://www.tokopedia.com/search?st=product&q=xiaomi%20mi%2011"
+        },
+        {
+          "name": "OnePlus 9",
+          "price": 9990000,
+          "image": "https://www.gizmochina.com/wp-content/uploads/2020/12/oneplus9-1.jpg",
+          "officialSite": "https://www.oneplus.com/global/oneplus-9",
+          "tokopediaLink": "https://www.tokopedia.com/search?st=product&q=oneplus%209"
+        }
+      ]
+    },
+    {
+      "categoryName": "Laptops",
+      "products": [
+        {
+          "name": "Dell XPS 13",
+          "price": 16999000,
+          "image": "https://th.bing.com/th/id/OIP.0jhL2o_M2IP5-M9DowQT5wHaFj?rs=1&pid=ImgDetMain",
+          "officialSite": "https://www.dell.com/en-us/shop/dell-laptops/xps-13/spd/xps-13-9310-laptop",
+          "tokopediaLink": "https://www.tokopedia.com/search?st=product&q=dell%20xps%2013"
+        },
+        {
+          "name": "Microsoft Surface Pro 7",
+          "price": 11499000,
+          "image": "https://th.bing.com/th/id/OIP.5-ZBnSr9bTmg1yRTzOgxCQAAAA?rs=1&pid=ImgDetMain",
+          "officialSite": "https://www.microsoft.com/surface-pro-7",
+          "tokopediaLink": "https://www.tokopedia.com/search?st=product&q=microsoft%20surface%20pro%207"
+        },
+        {
+          "name": "MacBook Air M1",
+          "price": 13999000,
+          "image": "https://th.bing.com/th/id/OIP.9pM1kxhssgN-nG6u5fj-xAHaFj?rs=1&pid=ImgDetMain",
+          "officialSite": "https://www.apple.com/macbook-air-m1",
+          "tokopediaLink": "https://www.tokopedia.com/search?st=product&q=macbook%20air%20m1"
+        },
+        {
+          "name": "HP Spectre x360",
+          "price": 17999000,
+          "image": "https://i.pcmag.com/imagery/reviews/00uwiwERhM15aoADGVjjUUy-3.jpg",
+          "officialSite": "https://www.hp.com/us-en/shop/hp-spectre-x360-laptop-15t-ev000-touch-8jz54av-1.html",
+          "tokopediaLink": "https://www.tokopedia.com/search?st=product&q=hp%20spectre%20x360"
+        },
+        {
+          "name": "Asus ZenBook 14",
+          "price": 10999000,
+          "image": "https://th.bing.com/th/id/OIP.oRx8FhEzfWwmtZVj_RFUsgHaHa?rs=1&pid=ImgDetMain",
+          "officialSite": "https://www.asus.com/us/laptops/for-home/zenbook/zenbook-14-ux425/",
+          "tokopediaLink": "https://www.tokopedia.com/search?st=product&q=asus%20zenbook%2014"
+        }
+      ]
+    },
+    {
+      "categoryName": "Wearables",
+      "products": [
+        {
+          "name": "Apple Watch Series 7",
+          "price": 5999000,
+          "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6339/6339854_sd.jpg",
+          "officialSite": "https://www.apple.com/apple-watch-series-7/",
+          "tokopediaLink": "https://www.tokopedia.com/search?st=product&q=apple%20watch%20series%207"
+        },
+        {
+          "name": "Fitbit Charge 5",
+          "price": 2699000,
+          "image": "https://mspoweruser.com/wp-content/uploads/2021/08/fitbit-charge-5-5.jfif",
+          "officialSite": "https://www.fitbit.com/global/us/products/trackers/charge5",
+          "tokopediaLink": "https://www.tokopedia.com/search?st=product&q=fitbit%20charge%205"
+        },
+        {
+          "name": "Samsung Galaxy Watch 4",
+          "price": 3299000,
+          "image": "https://th.bing.com/th/id/OIP.2KSHgZbV80hG2doNiTe-xwHaHa?rs=1&pid=ImgDetMain",
+          "officialSite": "https://www.samsung.com/global/galaxy/watch4/",
+          "tokopediaLink": "https://www.tokopedia.com/search?st=product&q=samsung%20galaxy%20watch%204"
+        },
+        {
+          "name": "Garmin Venu 2",
+          "price": 5999000,
+          "image": "https://th.bing.com/th/id/OIP.c6MWU-CZki7naW1GgHpyvgAAAA?rs=1&pid=ImgDetMain",
+          "officialSite": "https://www.garmin.com/en-US/p/4e5d7f29-3a86-4e51-88a5-47207b3b98be",
+          "tokopediaLink": "https://www.tokopedia.com/search?st=product&q=garmin%20venu%202"
+        },
+        {
+          "name": "Amazfit Bip U Pro",
+          "price": 1399000,
+          "image": "https://i.blogs.es/5f32bb/screenshot/original.jpeg",
+          "officialSite": "https://www.amazfit.com/global/products/amazfit-bip-u-pro.html",
+          "tokopediaLink": "https://www.tokopedia.com/search?st=product&q=amazfit%20bip%20u%20pro"
+        }
+      ]
+    },
+    {
+      "categoryName": "Accessories",
+      "products": [
+        {
+          "name": "Apple AirPods Pro",
+          "price": 3499000,
+          "image": "https://th.bing.com/th/id/OIP.134VJ44OStJo8DrF8-JnyAHaHa?rs=1&pid=ImgDetMain",
+          "officialSite": "https://www.apple.com/airpods-pro/",
+          "tokopediaLink": "https://www.tokopedia.com/search?st=product&q=apple%20airpods%20pro"
+        },
+        {
+          "name": "Samsung Galaxy Buds Pro",
+          "price": 2999000,
+          "image": "https://microless.com/cdn/products/d9f8cbd23b7b909630c7f547c2749af6-hi.jpg",
+          "officialSite": "https://www.samsung.com/global/galaxy/buds/pro/",
+          "tokopediaLink": "https://www.tokopedia.com/search?st=product&q=samsung%20galaxy%20buds%20pro"
+        },
+        {
+          "name": "Bose QuietComfort 35 II",
+          "price": 5999000,
+          "image": "https://th.bing.com/th/id/OIP.Ozyk2jdwcKyhLVtu-3l_wQHaHa?rs=1&pid=ImgDetMain",
+          "officialSite": "https://www.bose.com/en_us/products/headphones/over_ear_headphones/quietcomfort_35_ii.html",
+          "tokopediaLink": "https://www.tokopedia.com/search?st=product&q=bose%20quietcomfort%2035%20ii"
+        },
+        {
+          "name": "Jabra Elite 75t",
+          "price": 2999000,
+          "image": "https://th.bing.com/th/id/OIP.PiH79x66-h7y4mIs42GPCAAAAA?rs=1&pid=ImgDetMain",
+          "officialSite": "https://www.jabra.com/bluetooth-headsets/elite-75t",
+          "tokopediaLink": "https://www.tokopedia.com/search?st=product&q=jabra%20elite%2075t"
+        },
+        {
+          "name": "Anker Soundcore Life Q20",
+          "price": 2499000,
+          "image": "https://i5.walmartimages.com/asr/55501d33-1f42-48d8-b46f-79492dfbd036.928b61d27bedb51b0ebfb41d9a945a45.jpeg",
+          "officialSite": "https://www.anker.com/products/variant/soundcore-life-q20/A3023",
+          "tokopediaLink": "https://www.tokopedia.com/search?st=product&q=anker%20soundcore%20life%20q20"
+        }
+      ]
+    }
+  ]
+}
