@@ -48,8 +48,8 @@ export default function MountingData() {
         {data?.gadgetAndAccessories?.map((item, index) => (
           <div
             key={generateKey("item", index)}
-            className="grid grid-cols-5 gap-4">
-            <p className="col-span-5 font-medium text-2xl pb-4 border-b-2 border-pink-100">
+            className="grid grid-cols-5 max-sm:grid-cols-2 gap-4">
+            <p className="col-span-5 max-sm:col-span-2 font-medium text-2xl pb-4 border-b-2 border-pink-100">
               {item.categoryName}
             </p>
             {item.products.map((product, index) => (
@@ -68,14 +68,14 @@ export default function MountingData() {
                   <div className="flex flex-col gap-2">
                     <p className="text-sm">Link to Buy</p>
                     <button
-                      className="btn btn-active btn-ghost btn-sm"
+                      className="btn btn-active btn-sm"
                       onClick={() =>
                         window.open(product.officialSite, "_blank")
                       }>
                       Official Site
                     </button>
                     <button
-                      className="btn btn-active btn-success text-white btn-sm"
+                      className="btn btn-success text-white btn-sm"
                       onClick={() =>
                         window.open(product.tokopediaLink, "_blank")
                       }>

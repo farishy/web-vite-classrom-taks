@@ -3,6 +3,9 @@ import { useState } from "react";
 import { MdArrowBack } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { useOnChangeViewModel } from "./useOnChangeViewModel";
+import { Controller } from "react-hook-form";
+import Input from "@/components/Input/Input";
 
 const initialValues = {
   productId: "",
@@ -11,28 +14,11 @@ const initialValues = {
 
 export default function OnChange() {
   const navigate = useNavigate();
-  const [productForm, setProductForm] = useState(initialValues);
-  const [selectedId, setSelectedId] = useState("");
-  const [products, setProducts] = useState([
-    { productId: "PRODUCT01", productName: "Apple" },
-    { productId: "PRODUCT02", productName: "Banana" },
-  ]);
+  const { form, handleUpdateProduct, products, handleProductSelected } =
+    useOnChangeViewModel();
 
-  const handleKirimData = () => {
-    if (!selectedId) return alert("Pilih salah satu product untuk diedit");
-    const updatedProducts = products.map((product) =>
-      product.productId === selectedId
-        ? { ...product, ...productForm }
-        : product
-    );
-    setProducts(updatedProducts);
-    setProductForm(initialValues);
-    setSelectedId("");
-    toast.success("Product updated successfully");
-    document.getElementById("form_edit").close();
-  };
   return (
-    <div className="flex flex-col items-center justify-center h-screen w-screen gap-4">
+    <div className="flex flex-col items-center justify-center min-h-screen w-screen gap-4">
       <div className="flex flex-col gap-4 --border p-4 --rounded">
         <button
           className="btn btn-active btn-sm w-fit"
@@ -59,12 +45,8 @@ export default function OnChange() {
               <tr
                 key={generateKey("thead-products", index)}
                 onClick={() => {
-                  setProductForm({
-                    productId: product.productId,
-                    productName: product.productName,
-                  });
-                  setSelectedId(product.productId);
-                  document.getElementById("form_edit").showModal();
+                  console.log("clicked", product.productId);
+                  handleProductSelected(product.productId);
                 }}
                 className="group hover:cursor-pointer">
                 <td className="border p-4 group-hover:bg-gray-100">
@@ -86,43 +68,39 @@ export default function OnChange() {
             </form>
             <h3 className="font-bold text-lg pb-4 border-b">Edit Form</h3>
             <div className="flex flex-col gap-4 py-4">
-              <label className="input input-bordered flex items-center gap-2">
-                <span className="font-medium">ID</span>
-                <input
-                  type="text"
-                  className="grow"
-                  placeholder="Enter ID Product"
-                  name="id"
-                  value={productForm.productId}
-                  onChange={(e) =>
-                    setProductForm((prev) => ({
-                      ...prev,
-                      productId: e.target.value,
-                    }))
-                  }
-                  disabled
-                />
-              </label>
-              <label className="input input-bordered flex items-center gap-2">
-                <span className="font-medium">Product Name</span>
-                <input
-                  type="text"
-                  className="grow"
-                  placeholder="Enter ID Product"
-                  name="productName"
-                  value={productForm.productName}
-                  onChange={(e) =>
-                    setProductForm((prev) => ({
-                      ...prev,
-                      productName: e.target.value,
-                    }))
-                  }
-                />
-              </label>
+              <Controller
+                name="productId"
+                control={form.control}
+                render={({ field, fieldState }) => (
+                  <Input
+                    {...field}
+                    label="Product ID"
+                    placeholder="Enter Product ID"
+                    errorMessage={fieldState.error?.message}
+                    isError={Boolean(fieldState.error)}
+                    isRequired
+                    disabled
+                  />
+                )}
+              />
+              <Controller
+                name="productName"
+                control={form.control}
+                render={({ field, fieldState }) => (
+                  <Input
+                    {...field}
+                    label="Product Name"
+                    placeholder="Enter Product Name"
+                    errorMessage={fieldState.error?.message}
+                    isError={Boolean(fieldState.error)}
+                    isRequired
+                  />
+                )}
+              />
             </div>
             <button
               className="btn btn-primary w-full"
-              onClick={handleKirimData}>
+              onClick={handleUpdateProduct}>
               Save Changes
             </button>
           </div>

@@ -4,11 +4,14 @@ import "./index.css";
 import "react-toastify/dist/ReactToastify.css";
 import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
+import { RecoilRoot } from "recoil";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter basename="my-homework">
-      <App />
-    </BrowserRouter>
+    <RecoilRoot>
+      <BrowserRouter basename="my-homework">
+        <App />
+      </BrowserRouter>
+    </RecoilRoot>
   </StrictMode>
 );
