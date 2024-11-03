@@ -52,45 +52,49 @@ export default function MountingData() {
             <p className="col-span-5 max-sm:col-span-2 font-medium text-2xl pb-4 border-b-2 border-pink-100">
               {item.categoryName}
             </p>
-            {item.products.map((product, index) => (
-              <div
-                key={generateKey("product", index)}
-                className="border rounded-lg shadow max-h-[350px] bg-white">
-                <img
-                  src={product.image}
-                  className="h-[170px] object-top object-cover rounded-t-lg mx-auto"
-                />
-                <div className="flex flex-col p-2">
-                  <p className="line-clamp-2">{product.name}</p>
-                  <p className="font-medium mb-4">
-                    {formatToRupiah(product.price)}
-                  </p>
-                  <div className="flex flex-col gap-2">
-                    <p className="text-sm">Link to Buy</p>
-                    <button
-                      className="btn btn-active btn-sm"
-                      onClick={() =>
-                        window.open(product.officialSite, "_blank")
-                      }>
-                      Official Site
-                    </button>
-                    <button
-                      className="btn btn-success text-white btn-sm"
-                      onClick={() =>
-                        window.open(product.tokopediaLink, "_blank")
-                      }>
-                      <div className="badge">
-                        <img
-                          src="https://th.bing.com/th/id/OIP.VqlfF4MSB9RearjYRT0SngHaGL?rs=1&pid=ImgDetMain"
-                          className="w-4 h-4"
-                        />{" "}
-                      </div>
-                      Tokopedia
-                    </button>
+            {!item?.products.length ? (
+              <p className="whitespace-nowrap w-full text-gray-500">{`There not data record of ${item.categoryName}`}</p>
+            ) : (
+              item.products.map((product, index) => (
+                <div
+                  key={generateKey("product", index)}
+                  className="border rounded-lg shadow max-h-[350px] bg-white">
+                  <img
+                    src={product.image}
+                    className="h-[170px] object-top object-cover rounded-t-lg mx-auto"
+                  />
+                  <div className="flex flex-col p-2">
+                    <p className="line-clamp-2">{product.name}</p>
+                    <p className="font-medium mb-4">
+                      {formatToRupiah(product.price)}
+                    </p>
+                    <div className="flex flex-col gap-2">
+                      <p className="text-sm">Link to Buy</p>
+                      <button
+                        className="btn btn-active btn-sm"
+                        onClick={() =>
+                          window.open(product.officialSite, "_blank")
+                        }>
+                        Official Site
+                      </button>
+                      <button
+                        className="btn btn-success text-white btn-sm"
+                        onClick={() =>
+                          window.open(product.tokopediaLink, "_blank")
+                        }>
+                        <div className="badge">
+                          <img
+                            src="https://th.bing.com/th/id/OIP.VqlfF4MSB9RearjYRT0SngHaGL?rs=1&pid=ImgDetMain"
+                            className="w-4 h-4"
+                          />{" "}
+                        </div>
+                        Tokopedia
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))
+            )}
           </div>
         ))}
       </div>
